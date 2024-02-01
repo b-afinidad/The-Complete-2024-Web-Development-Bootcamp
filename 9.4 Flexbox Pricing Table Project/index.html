@@ -11,15 +11,65 @@
       font-family: 'Sono', sans-serif;
     }
 
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: aliceblue;
+      border-radius: 5px;
+      text-align: center;
+
+    }
+
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-features {
+      list-style: none;
+      padding: none;
+      margin: 0;
+    }
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    .plan-button {
+      background-color: #ff6600;
+      padding: 10px;
+      color: antiquewhite;
+      border-radius: 5px;
+      border: none;
+    }
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
-      
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="pricing-container">
+
     <div class="pricing-plan">
       <div class="plan-title">Basic</div>
       <div class="plan-price">$9.99/month</div>
@@ -30,6 +80,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
+
     <div class="pricing-plan">
       <div class="plan-title">Standard</div>
       <div class="plan-price">$19.99/month</div>
@@ -40,6 +91,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
+
     <div class="pricing-plan">
       <div class="plan-title">Premium</div>
       <div class="plan-price">$49.99/month</div>
@@ -50,6 +102,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
+
   </div>
 
 </body>
